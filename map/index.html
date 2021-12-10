@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- 插件規模越大的,放越上面 -->
+	<!-- bootstrap Core CSS CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- swiper Core CSS CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<!-- AOS Core CSS CDN -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- fontawesome Core CSS CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- layout CSS -->
+	<link rel="stylesheet" href="./css/layout.css">
+
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">
+				<img src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30"
+					alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Portfolio</a>
+					</li>
+					<div class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</div>
+					<div class="nav-item">
+						<a class="nav-link" href="./checkout1.html">
+							<i class="fas fa-shopping-cart"></i>
+						</a>
+					</div>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-expanded="false">
+							<i class="fas fa-user"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="./login.html">Login</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<!-- 輪播區塊 -->
+		<section id="carousel">
+			<!-- Slider main container -->
+			<div class="swiper" id="carousel-swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img src="https://picsum.photos/seed/picsum/1920/768" class="d-block w-100" alt="...">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://picsum.photos/1920/768?grayscale" class="d-block w-100" alt="...">
+					</div>
+					<div class="swiper-slide">
+						<img src="https://picsum.photos/1920/768" class="d-block w-100" alt="...">
+					</div>
+					...
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
+		</section>
+
+		<!-- 服務介紹區塊 -->
+		<section id="service" class="py-5">
+			<div class="container">
+				<h1>服務介紹</h1>
+				<p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice
+					poutine, ramps microdosing banh mi pug.</p>
+			</div>
+		</section>
+
+		<!-- 照片牆 -->
+		<section id="photowall" class="py-5">
+			<div class="container">
+				<div class="d-flex">
+					<h1 class="w-25" data-aos="fade-in">照片牆</h1>
+					<p class="w-75">
+						Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke
+						farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies
+						heirloom.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6">
+								<div class="box">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="box"></div>
+							</div>
+							<div class="col-12">
+								<div class="box"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-12">
+								<div class="box"></div>
+							</div>
+							<div class="col-6">
+								<div class="box"></div>
+							</div>
+							<div class="col-6">
+								<div class="box"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 產品 -->
+		<section id="product" class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-5 offset-1" id="scene">
+						<img class="w-100" data-depth="0.2" src="https://raw.githubusercontent.com/wagerfield/parallax/master/examples/assets/images/layer1.png" alt="">
+						<img class="w-100" data-depth="0.4" src="https://raw.githubusercontent.com/wagerfield/parallax/master/examples/assets/images/layer2.png" alt="">
+						<img class="w-100" data-depth="0.6" src="https://raw.githubusercontent.com/wagerfield/parallax/master/examples/assets/images/layer3.png" alt="">
+						<img class="w-100" data-depth="0.8" src="https://raw.githubusercontent.com/wagerfield/parallax/master/examples/assets/images/layer4.png" alt="">
+						<img class="w-100" data-depth="1" src="https://raw.githubusercontent.com/wagerfield/parallax/master/examples/assets/images/layer5.png" alt="">
+						<img class="w-100" data-depth="1.2" src="https://raw.githubusercontent.com/wagerfield/parallax/master/examples/assets/images/layer6.png" alt="">
+					</div>
+					<form class="col-5" action="/cart" method="get">
+						<div class="hightlight-product-type">iPhone</div>
+						<div class="hightlight-product-name">哪一款 iPhone 適合你？</div>
+						<div class="hightlight-product-review d-flex ">
+							<div class="five-star d-flex align-items-center">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+							<div class="reviews mx-2">4 Reviews</div>
+							<div class="share d-flex align-items-center">
+								<i class="fab fa-facebook-f"></i>
+								<i class="fab fa-twitter"></i>
+								<i class="fab fa-weixin"></i>
+							</div>
+						</div>
+						<p class="my-3">超能力，超有實力。
+
+							NT$22,900 起，或每月 NT$1,908 起；換購另享折抵優惠1。
+
+							進一步了解
+							現僅供線上購買，可選擇免額外付費運送服務，或到 Apple 直營店取貨。</p>
+						<div>
+							<span>color</span>
+							<input type="radio" name="color" value="red">
+							<input type="radio" name="color" value="green">
+							<input type="radio" name="color" value="blue">
+							<span>type</span>
+							<select name="type" id="">
+								<option value="iPhone13">iPhone13</option>
+								<option value="iPhone13 Pro">iPhone13 Pro</option>
+								<option value="iPhone12">iPhone12</option>
+								<option value="iPhone SE">iPhone SE</option>
+							</select>
+						</div>
+						<hr>
+						<button type="submit" class="btn btn-primary">add cart</button>
+					</form>
+				</div>
+				<!-- Swiper -->
+				<div class="swiper my-2" id="product-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="card">
+								<img src="https://picsum.photos/id/23/600/400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<img src="https://picsum.photos/id/283/600/400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<img src="https://picsum.photos/id/253/600/400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<img src="https://picsum.photos/id/233/600/400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="card">
+								<img src="https://picsum.photos/id/213/600/400" class="card-img-top w-100" alt="...">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">Some quick example text to build on the card title and make up
+										the bulk of the card's content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 地圖 -->
+		<section id="map" class="py-5">
+			<div class="container">
+				<div class="feedback">
+					<h3>Feedback</h3>
+					<p>Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email</label>
+							<input type="email" class="form-control" id="exampleInputEmail1"
+								aria-describedby="emailHelp">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Message</label>
+							<textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8658.436986021858!2d120.66141501153493!3d24.156847567341938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d78069134cb%3A0xf7a65bba8f974f36!2z5ZyL56uL6Ieq54S256eR5a245Y2a54mp6aSo!5e0!3m2!1szh-TW!2stw!4v1638518851185!5m2!1szh-TW!2stw"
+				width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy">
+			</iframe>
+		</section>
+	</main>
+
+	<footer>
+		<div class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+
+					</div>
+					<div class="col">
+						<ul class="footer-menu">
+							<li class="footer-menu-item">CATEGORIES</li>
+							<li class="footer-menu-item">First Link</li>
+							<li class="footer-menu-item">Second Link</li>
+							<li class="footer-menu-item">Third Link</li>
+							<li class="footer-menu-item">Fourth Link</li>
+						</ul>
+					</div>
+					<div class="col">
+						<ul class="footer-menu">
+							<li class="footer-menu-item">CATEGORIES</li>
+							<li class="footer-menu-item">First Link</li>
+							<li class="footer-menu-item">Second Link</li>
+							<li class="footer-menu-item">Third Link</li>
+							<li class="footer-menu-item">Fourth Link</li>
+						</ul>
+					</div>
+					<div class="col">
+						<ul class="footer-menu">
+							<li class="footer-menu-item">CATEGORIES</li>
+							<li class="footer-menu-item">First Link</li>
+							<li class="footer-menu-item">Second Link</li>
+							<li class="footer-menu-item">Third Link</li>
+							<li class="footer-menu-item">Fourth Link</li>
+						</ul>
+					</div>
+					<div class="col">
+						<ul class="footer-menu">
+							<li class="footer-menu-item">CATEGORIES</li>
+							<li class="footer-menu-item">First Link</li>
+							<li class="footer-menu-item">Second Link</li>
+							<li class="footer-menu-item">Third Link</li>
+							<li class="footer-menu-item">Fourth Link</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-light py-1">
+			<div class="container d-flex justify-content-between">
+				<div class="copyright">
+					© 2021 Tailblocks — @knyttneve
+				</div>
+				<div class="community">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jquery Core JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<!-- popper Core JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<!-- bootstrap Core JS CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+		integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+		crossorigin="anonymous"></script>
+	<!-- swiper Core JS CDN -->
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<!-- parallax Core JS CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<!-- AOS Core JS CDN -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- 輪播區塊 JS -->
+	<script src="./JS/swiper.js"></script>
+	<script src="./JS/aos.js"></script>
+	<script src="./JS/parallax.js"></script>
+</body>
+
+</html>
